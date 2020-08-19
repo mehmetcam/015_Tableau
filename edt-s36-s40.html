@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table class="MyTableau">
+        <thead>
+            <tr>
+                <th style="font-weight: bold;" colspan="6" class="S">Planning par semaine</th>
+            </tr>
+            <tr>
+                <th style="font-weight: bold;">Semaine</th>
+                <th style="font-weight: bold;">Lundi</th>
+                <th style="font-weight: bold;">Mardi</th>
+                <th style="font-weight: bold;">Mercredi</th>
+                <th style="font-weight: bold;">Jeudi</th>
+                <th style="font-weight: bold;">Vendredi</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <th class="S">S36</th>
+                <td colspan="5">Nico</td>
+            </tr>
+            <tr>
+                <th class="S">S37</th>
+                <td colspan="2">Nico</td>
+                <td colspan="3">Renaud</td>
+            </tr>
+            <tr>
+                <th class="S">S38</th>
+                <td colspan="2">Nico</td>
+                <td colspan="1">Renaud</td>
+                <td colspan="2">Nico</td>
+            </tr>
+            <tr>
+                <th class="S">S39</th>
+                <td colspan="1">Renaud</td>
+                <td colspan="2">Nico</td>
+                <td colspan="2">Renaud</td>
+            </tr>
+            <tr>
+                <th class="S"> S40</th>
+                <td colspan="1">Nico</td>
+                <td colspan="2">Renaud</td>
+                <td colspan="2">Nico</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th style="font-style: italic;" colspan="6">Susceptible d'évoluer</th>
+            </tr>
+            <tr>
+                <th colspan="2">Nicolas Total (H)</th>
+                <th>
+                    <p id="Nicolas"></p>
+                </th>
+                <th colspan="2">Renaud Total (H)</th>
+                <th>
+                    <p id="Renaud"></p>
+                </th>
+
+            </tr>
+        </tfoot>
+
+
+    </table>
+
+    
+
+    <br>
+
+
+
+
+    <script>
+            let cels = document.querySelectorAll("tbody>tr>td");
+            let jours = [];
+            cels.forEach(cel =>{
+                const val = jours[cel.innerText] ? jours[cel.innerText] : 0;
+                jours[cel.innerText] = val + (cel.hasAttribute("colspan") ? parseInt(cel.getAttribute("colspan")) : 1);
+
+            })
+
+            console.log(jours);
+
+            
+
+
+
+    </script>
+</body>
+
+</html>

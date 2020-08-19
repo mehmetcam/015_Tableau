@@ -1,0 +1,43 @@
+*{
+    font-weight: normal;
+    padding: 5px;
+}
+
+td{
+    
+}
+
+thead{
+    font-weight: bold;
+}
+
+tbody{
+    font-weight: normal;
+}
+
+tfoot{
+    font-style: italic;
+}
+
+table, thead, tbody, tfoot, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tbody tr:nth-child(even){background-color: #A1D9E6;}
+tbody tr:nth-child(odd){background-color: #6AE48C;}
+
+
+.S{
+    background-color: #D3D3D3;
+    
+}
+/* 
+.M{
+    background-color: #A1D9E6;
+}
+
+.Y{
+    background-color: #6AE48C;
+} */
