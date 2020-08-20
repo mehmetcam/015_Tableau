@@ -29,15 +29,20 @@ tbody tr:nth-child(even){background-color: #A1D9E6;}
 tbody tr:nth-child(odd){background-color: #6AE48C;}
 
 
-.S{
+tbody tr th{
     background-color: #D3D3D3;
     
 }
-/* 
-.M{
-    background-color: #A1D9E6;
+
+thead tr th{
+    background-color: #D3D3D3;
+    font-weight: bold;
 }
 
-.Y{
-    background-color: #6AE48C;
-} */
+tfoot{
+    background-color: white;
+}
+
+thead tr td{
+    font-weight: bold;
+}
