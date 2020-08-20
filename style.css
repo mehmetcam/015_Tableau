@@ -1,16 +1,14 @@
 *{
     padding: 5px;
     text-align: center;
+    
 }
-
+ 
 thead{
     border: 1px solid black;
     border-collapse: collapse;
     
 }
-
-
-
 
 table, caption, tr, th, td{
     border: 1px solid black;
@@ -23,15 +21,29 @@ caption{
     background-color: #D3D3D3;
 }
 
-tbody{
-    font-style: normal;
-}
+
 
 tfoot{
     font-style: italic;
 }
 
+tbody th{
+    background-color: #D3D3D3;
+    font-weight: normal;
+}
 
-tbody tr:nth-child(even){background-color: #A1D9E6;}
-tbody tr:nth-child(odd){background-color: #6AE48C;}
-tbody tr:nth-child(1){background-color: white;}
+tbody tr:nth-child(even){background-color: #6AE48C;}
+tbody tr:nth-child(odd){background-color:#A1D9E6 ;}
+
+table{
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+body{
+    background-image: url(cat.jpg) ;
+    
+
+}
